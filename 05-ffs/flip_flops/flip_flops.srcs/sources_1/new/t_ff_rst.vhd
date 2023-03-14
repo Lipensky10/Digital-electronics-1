@@ -53,21 +53,21 @@ begin
     -- sig_q = /sig_q if t = 1 (inversion)
     --------------------------------------------------------
     p_t_ff_rst : process (clk)
-    begin
+     begin
         if rising_edge(clk) then
-            if (rst ='1') then
-                sig_q <= '0';
-            else 
-                if (t = '0') then
-                    q <= q ;
-                else
-                    q <=not q;
-                end if;     
+            if (rst = '1') then
+                s_q <= '0';
+            else
+               if (t = '0') then
+                    s_q <= s_q;
+               else
+                    s_q <= not(s_q);
+               end if;
             end if;
         end if;
     end process p_t_ff_rst;
 
     -- Output ports are permanently connected to local signal
-    q     <= sig_q;
-    q_bar <= not sig_q;
+    q     <= s_q;
+    q_bar <= not s_q;
 end architecture behavioral;
