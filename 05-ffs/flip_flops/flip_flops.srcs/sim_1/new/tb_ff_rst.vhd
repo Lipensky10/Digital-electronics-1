@@ -78,15 +78,15 @@ begin
     p_stimulus : process
     begin
         report "Stimulus process started";
-        sig_data <='0'; wait for 13 ns;
-        sig_data <='1'; wait for 13 ns;
-        sig_data <='0'; wait for 13 ns;
-        sig_data <='1'; wait for 13 ns;
-        sig_data <='0'; wait for 63 ns;
-        sig_data <='1'; wait for 93 ns;
         sig_data <='0'; wait for 12 ns;
+        sig_data <='1'; wait for 12 ns;
+        sig_data <='0'; wait for 12 ns;
+        sig_data <='1'; wait for 12 ns;
+        sig_data <='0'; wait for 62 ns;
+        sig_data <='1'; wait for 90 ns;
+        sig_data <='0'; wait for 13 ns;
         sig_data <='1'; wait for 21 ns;
-        sig_data <='0'; wait for 12 ns;
+        sig_data <='0'; wait for 13 ns;
         sig_data <='1'; wait for 21 ns;
         -- DEFINE YOUR INPUT DATA HERE
 
