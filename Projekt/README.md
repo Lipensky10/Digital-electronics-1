@@ -39,7 +39,7 @@ User inputs desired letter in 5 bit binary form by toggling switches `SW `(up- 1
 ![](nexys_ui.png)
 
 Input & output chart
- | **Number** | **Letter** | **Binary input** | **Morse code output** |
+ | **Number** | **Binary input** | **Character** | **Morse code output** |
  | :-: | :-: | :-: | :-: |
    | 0 | 00000 | A |**. -**|
    | 1 | 00001 | B | **- . . .** |
